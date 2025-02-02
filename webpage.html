@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>web page</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='webpage.css') }}">
+</head>
+
+<body>
+	<div class="main">
+		<div class="navbar">
+			<div class="icon">
+                <img src="https://i.pinimg.com/originals/ed/41/6a/ed416a77bf20d2d6e16b49f0bc6cc07b.png" alt="logo" width="50%" height="100%">
+                <h2 class="logo">VIRTUAL STYLIST</h2>
+             </div>
+             <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#"><a href="{{ url_for('letsgopage') }}">LET'S GO</a> 
+                    <li><a href="#"><a href="{{ url_for('feedbackpage') }}">FEEDBACK</a> </li>
+                </ul>
+             </div>
+            <div class="content">
+                <h1>WELCOME TO YOUR <BR><span>VIRTUAL STYLIST</span></h1>
+                    <p class="par">This Page allows you to dress Your self According to <br>YOUR STYLE,YOUR SHAPE,YOUR COLOR.Lets get started for your GLOWUP.</p> 
+                </div>
+            <div class="form">
+                <h2>
+                    LOGIN HERE
+                </h2>
+                <form action="{{ url_for('webpage')}}" method="POST">
+                <input type="email" name="email" placeholder="Enter Email here" required>
+                <input type="password" name="password" placeholder="Enter password here" required>
+                
+                <div class=button><button class="cn" >Login</button>
+                
+                <p class="link">Don't have an account?</p><br>
+                <button class="cn" href="Accountcreate.html">Sign up here</button>
+                </div>
+            </form>
+            </div>
+            
+            <div class="bodymeasure">
+                <h1>To determine your body type, you can follow this simple guide:</h1>
+                Step 1: Take Key Measurements
+                Use a flexible measuring tape and follow these steps:
+                
+                1. Shoulders: 
+                   - Measure the widest part of your shoulders by wrapping the tape all the way around. This is easier with assistance.
+                
+                2. Bust: 
+                   - Measure around the fullest part of your bust, ensuring the tape is level across your back and chest.
+                
+                3. Waist: 
+                   - Find the narrowest part of your waist, typically just above your belly button, and measure around it.
+                
+                4. Hips: 
+                   - Measure around the fullest part of your hips and buttocks.
+                
+                Step 2: Compare Your Measurements
+                Write down your measurements and compare them to each other:
+                - Is one area significantly larger than the others?
+                - Are they all relatively similar in size?
+                - Does your waist stand out as noticeably smaller?
+                
+                Step 3: Identify Your Body Type
+                Here’s how to match your proportions to a body type:
+                
+                1. **Rectangle**:
+                   - Shoulders, bust, and hips are roughly the same size.
+                   - Little to no definition in the waist.
+                
+                2. **Hourglass**:
+                   - Bust and hips are nearly the same size, with a significantly smaller waist.
+                   - This shape often has a balanced and curvy appearance.
+                
+                3. **Triangle (Pear)**:
+                   - Hips are wider than both your shoulders and bust.
+                   - Your upper body is narrower compared to your lower body.
+                
+                4. **Inverted Triangle**:
+                   - Shoulders or bust are noticeably broader than your hips.
+                   - Your upper body is more prominent than your lower body.
+                
+                5. **Apple (Round)**:
+                   - Your waist is less defined and may be as wide or wider than your bust and hips.
+                   - You may have a fuller midsection.
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
