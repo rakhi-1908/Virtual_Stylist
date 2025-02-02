@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Stylist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='letsgopage.css') }}">
+</head>
+<body>
+    <div class="main">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="icon">
+                <img src="https://i.pinimg.com/originals/ed/41/6a/ed416a77bf20d2d6e16b49f0bc6cc07b.png" alt="logo" width="50%" height="100%">
+                <h2 class="logo">VIRTUAL STYLIST</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('webpage') }}">Home</a></li>
+                    <li><a href="#">LET'S GO</a></li>
+                    <li><a href="{{ url_for('feedbackpage') }}">FEEDBACK</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div class="quiz-container">
+            <!-- Step 1: Gender Selection -->
+            <div id="step1" class="quiz-step" >
+                <h2>Select Your Gender</h2>
+                <button onclick="selectGender('male')">Male</button>
+                <button onclick="selectGender('female')">Female</button>
+            </div>
+
+            <!-- Step 2: Body Type Selection -->
+            <div id="step2" class="quiz-step" style="display: none;">
+                <div class="select-container"><h2>Select Your Body Type</h2>
+                <select id="bodyType">
+                </select>
+                <button onclick="goBackToGender()">Back</button>
+            </div>
+                <button onclick="goToOccasion()">Next</button>
+
+            </div>
+            <div id="step3" class="quiz-step" style="display: none;">
+                <h2>Select the Occasion</h2>
+                <button onclick="selectOccasion('casual')">Casual</button>
+                <button onclick="selectOccasion('formal')">Formal</button>
+                <button onclick="goBackToBodyType()">Back</button>
+            </div>     
+        </div>
+            <div id="output" style="display: none;">
+                <div class="gobacktoselectionoccasionbutton">
+                    <button onclick="goBackToSelectOccasion()">Back</button>
+                </div>
+                    <h1>Your Recommended Outfits Are Here:</h1>
+           
+                <div id="recommendation" class="recommendation-container">
+                    <!-- Images will be dynamically added here -->
+                </div>
+            </div>
+       
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
