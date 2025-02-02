@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Create</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Accountcreate.css') }}">
+</head>
+<body>
+<div class="form">
+    <form action="{{ url_for('Accountcreate') }}" method="POST">
+        <h2>Create Your Account HERE</h2>
+        <input type="text" name="name" placeholder="Enter Your Name here" required>
+        <input type="text" name="mobileno" placeholder="Enter Mobile No. here" required>
+        <input type="email" name="email" placeholder="Enter Email here" required>
+        <input type="password" name="password" placeholder="Enter password here" required>
+        <input type="confirmpassword" name="confirm_password" placeholder="Enter Confirm password here" required>
+        <div class="btnn"> 
+            <button class="cn"> Create Account</button>
+    </form>
+    <p>{{ message }}</p>
+</div>
+</body>
+</html>
