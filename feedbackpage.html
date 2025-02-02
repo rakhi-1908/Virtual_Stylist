@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Feedback page</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='feedbackpage.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main">
+		<div class="navbar">
+			<div class="icon">
+                <img src="https://i.pinimg.com/originals/ed/41/6a/ed416a77bf20d2d6e16b49f0bc6cc07b.png" alt="logo" width="50%" height="100%">
+                <h2 class="logo">VIRTUAL STYLIST</h2>
+            </div>
+             <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('webpage') }}">Home</a></li>
+                    <li><a href="{{ url_for('letsgopage') }}">LET'S GO</a> </li>
+                    <li><a href="#">FEEDBACK</a> </li>
+                </ul>
+             </div>
+    </div>
+	<div class="container">
+        
+		<div class="contact-left-title">
+			<h2>Give us your Feedback</h2>
+			<hr>
+		</div>
+        
+        <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4"  class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3"  class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2"  class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1"  class="fas fa-star"></label>
+           <div class="rating-text"></div>
+        </div>
+        
+			<textarea name="message" placeholder="Tell us something you want us to improve" class="contact-inputs" required></textarea>
+			<button type="submit">Submit</button>    
+        </form>
+        <form action="{{ url_for('feedbackpage') }}" method="GET"></form>
+    </div>
+</body>
+</html>
