@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+.main{
+    background-image:url('https://img.freepik.com/premium-vector/fashion-blogger-recording-video-her-vlog-showing-stylish-trendy-clothing-stylist-presenting-modern-garments-camera-tripod-colored-flat-vector-illustration-isolated-white-background_198278-13237.jpg?w=740');
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width:160px;
+    float: left;
+    height: 60px;
+    margin-top: 5px;
+}
+.icon h2{
+    margin-left: 70px;
+    margin-top: -66px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+}
+.logo{
+    color:brown;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    margin-left: 85px;
+    margin-top: -75px;
+}
+.MENU{
+    width: 400px;
+    float:left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-top: 27px;
+    margin-left: 142px;
+    font-size: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: #350202;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color:#ff7200;
+}
+.quiz-step .content{
+    float: right;
+    margin-left: 600px;
+    position: fixed;
+}
+
+.quiz-container{
+background: linear-gradient(to top,rgba(10, 10, 10, 0.8)50%,rgba(12, 11, 11, 0.8)50%);
+border-radius: 10px;
+box-shadow: 0 0 10px 2px rgba(100,100,100,0.1);
+width:350px;
+height: 300px;
+overflow:hidden;
+float: top;
+margin-left: 35%;
+position: fixed;
+margin-top: 80px;
+}
+.quiz-step{
+padding:4res;
+}
+h1{
+    background: linear-gradient(to top,rgba(10, 10, 10, 0.8)50%,rgba(12, 11, 11, 0.8)50%);
+    color: #e9e9e9;
+    border-radius: 50px;
+    padding: 20px;
+    height: 30px;
+    width: 40%;
+    margin-left: 30%;
+}
+h2{
+padding: 1res;
+text-align: center;
+margin: 1res 0;
+margin-top: 20px;
+font-size: 30px;
+color: #f9f9f9;
+margin-right: 5px;
+}
+.quiz-header ol{
+    list-style-type: none;
+    padding: 0;
+}
+.quiz-header ol li{
+    font-size: 20px;
+    margin:10%;
+}
+.quiz-header ol li label{
+cursor: pointer;
+}
+.gobacktoselectionoccasionbutton{
+    width: 200px;
+    position: fixed;
+    margin-top: 5px;
+    margin-left: 190px;
+}
+button{
+    background-color: #ff7200;
+    color:rgb(8, 5, 4);
+    display: block;
+    width: 95%;
+    height: 50px;
+    cursor: pointer;
+    font-size:40px;
+    font-family: inherit;
+    padding: 0px;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+button:hover{
+    background-color: #3742df;
+}
+button:focus{
+    outline: none;
+    background-color: #1ec508;
+}
+.select{
+    width: 100%;
+    height: 20px;
+
+}
+/* Style the body type select dropdown */
+#bodyType {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    margin: 10px ;
+    transition: border-color 0.3s ease-in-out;
+    margin-right: -10px;
+}
+
+/* Focus effect for the select box */
+#bodyType:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Add hover effect to the select dropdown */
+#bodyType:hover {
+    background-color: #e9e9e9;
+}
+
+/* Style the option items */
+#bodyType option {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Add a hover effect for options */
+#bodyType option:hover {
+    background-color: #f1f1f1;
+}
+
+/* Custom container for the body type options */
+.select-container {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+bodyTypeIcon {
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.select-container::after {
+    content: '▾';  /* Custom arrow icon for dropdown */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #555;
+    pointer-events: none;
+}
+
+
+.recommendation-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 15px;
+    flex-wrap: wrap; 
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #e45a1a; 
+    max-width: 80%;
+}
+.quiz-step.active {
+    display: block; /* Show active step */
+}
+.recommendation-container img {
+    max-width: 150px; 
+    height: auto; 
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.recommendation-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}

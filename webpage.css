@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.main{
+    width: 90%;
+    background-image: url('https://thumbs.dreamstime.com/z/cartoon-color-character-person-woman-personal-stylist-online-concept-vector-flat-design-style-illustration-fashion-consultant-204206831.jpg') ;
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.navbar{
+    width: 1000px;
+    height: 75px;
+    margin:10px;
+}
+.icon{
+    width:200px;
+    float: left;
+    height: 70px;
+    margin-top: 5px;
+}
+.logo{
+    color:brown;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    margin-left: 85px;
+    margin-top: -75px;
+}
+.MENU{
+    width: 200px;
+    float:left;
+    height: 60px;
+    
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-top: 27px;
+    margin-left: 142px;
+    font-size: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #350202;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color:#ff7200;
+}
+
+.content{
+    background: linear-gradient(to top,rgba(248, 245, 245, 0.8)50%,rgba(247, 244, 244, 0.8)50%);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: #000c03;
+    width: 600px;
+    height: 300px;
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
+    position: fixed;
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #310202;
+}
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    color: #310202;
+    letter-spacing: 2px;
+}
+.button .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-top: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.button .cn a{
+    text-decoration: none;
+    color: #680d0d;
+    transition: .4s ease;
+}
+.content span{
+    color: #010c04;
+    font-size: 60px;
+}
+.form{
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+position: fixed;
+top: 100px;
+right: 100px;
+float: right;
+border-radius: 10px;
+padding: 25px;
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color:#faf7f7;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.form input:focus{
+    outline:none;
+}
+
+.link {
+    font-family: sans-serif;
+    color:#fcfbfb;
+ font-size: large;
+}

@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+.main{
+    background-image:url('https://img.freepik.com/premium-vector/fashion-blogger-recording-video-her-vlog-showing-stylish-trendy-clothing-stylist-presenting-modern-garments-camera-tripod-colored-flat-vector-illustration-isolated-white-background_198278-13237.jpg?w=740');
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width:190px;
+    float: left;
+    height: 70px;
+    margin-top: 5px;
+}
+.icon h2{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+}
+.logo{
+    color:brown;
+    font-size: 40px;
+    font-family: Arial;
+    padding-left: 20px;
+    margin-left: 85px;
+    margin-top: -70px;
+}
+.MENU{
+    width: 400px;
+    float:left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-top: 27px;
+    margin-left: 142px;
+    font-size: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: #350202;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color:#ff7200;
+}
+.container {
+    margin-left: 450px;
+    width: 400px;
+    background-color: #2b0202;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contact-left-title {
+    text-align: center;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.container .star-widget {
+    display: flex;
+    flex-direction: row-reverse; /* Ensures the stars are arranged correctly */
+    gap: 10px;
+    position: relative;
+}
+
+.container .star-widget input {
+    display: none; /* Hide the radio buttons */
+}
+
+.container .star-widget label {
+    font-size: 30px;
+    color: #ccc; /* Default star color */
+    cursor: pointer;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Highlight stars on hover */
+.container .star-widget input:not(:checked) ~ label:hover,
+.container .star-widget input:not(:checked) ~ label:hover ~ label {
+    color: #fd4;
+    transform: scale(1.2);
+}
+
+/* Highlight selected stars */
+.container .star-widget input:checked ~ label {
+    color: #fd4;
+    transform: scale(1.2);
+}
+
+/* Dynamic text for each star rating */
+.container .star-widget input#rate-1:checked ~ .rating-text::after {
+    content: "I don't like it";
+}
+
+.container .star-widget input#rate-2:checked ~ .rating-text::after {
+    content: "It should improve";
+}
+
+.container .star-widget input#rate-3:checked ~ .rating-text::after {
+    content: "I think it can improve";
+}
+
+.container .star-widget input#rate-4:checked ~ .rating-text::after {
+    content: "I liked it";
+}
+
+.container .star-widget input#rate-5:checked ~ .rating-text::after {
+    content: "I loved it";
+}
+
+.rating-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fd4;
+    margin-top: 10px;
+    height: 20px; /* Reserve space for the text */
+    text-align: center;
+}
+
+.container textarea {
+    height: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    width: 100%;
+    margin-top: 10px;
+    color: #000;
+}
+
+.container button {
+    background-color: #da9d74;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    width: 40%;
+    height: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background: linear-gradient(270deg, #fa6d86, #ff994f);
+    transform: translateY(-5px);
+}
+
+@media(max-width: 800px) {
+    .contact-inputs {
+        width: 80vw;
+    }
+
+    .container {
+        width: 90%;
+        margin-left: auto;
+    }
+}
